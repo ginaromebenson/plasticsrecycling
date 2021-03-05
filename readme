@@ -1,0 +1,88 @@
+### TABLE OF CONTENTS
+---------------------
+
+* DATASET TITLE
+* AUTHORS AND AFFILIATIONS
+* LANGUAGE
+* SUMMARY/ABSTRACT
+* KEYWORDS
+* FILE ORGANIZATION
+* DATASET DESCRIPTION
+* DATA DICTIONARY
+* SHARING & ACCESSING INFORMATION
+* ADDITIONAL NOTES/COMMENTS
+
+### DATASET TITLE
+
+Residential Plastic Recycling in the Seattle, WA, Wilmington, DE, and Des Moines, IA
+
+### AUTHORS AND AFFILIATIONS
+
+* Name: Gina Rome-Benson
+* Organization/institution: University of Washington iSchool
+* Email: romegina.edu
+
+### LANGUAGE
+
+* English
+
+### SUMMARY/ABSTRACT
+
+This dataset looks at the overall percentage of plastics in each of the landfills closest to the state's most populous city. It also breaks down the percentage that each type of plastic composes in the overall amount of plastic.
+
+### KEYWORDS
+
+"recycling," "plastic," "PET," "expanded polystyrene," "seattle," "washington," "wilmington," "delaware," "des moines", "iowa"
+
+### FILE ORGANIZATION
+
+* This dataset consists of 1 folder containing 2 files:
+  * plastic_raw.CSV contains the data as it was extracted from the tables
+  * plastic_normalized.CSV contains the normalized data
+  * This very readme text
+
+### DATASET DESCRIPTION
+
+#### Data sources:
+
+  *https://fortress.wa.gov/ecy/publications/documents/1607032.pdf
+  *http://www.iowadnr.gov/Portals/idnr/uploads/waste/wastecharacterization2017.pdf
+  *https://dswa.com/wp-content/uploads/2017/02/Final-Report-DSWA-Waste-Characterization-FY-2016-January-2017.pdf
+
+#### Data collection dates:
+
+* Washington data is from 2015-2016
+* Iowa and Delaware data are from 2017.
+* Data was pulled in February 2021
+
+
+### DATA DICTIONARY
+
+This is how to read the data dictionary:
+  Variable | Variable label | Variable Type | Measurement Units | Allowed Values | Description/notes
+
+    Region | Region	Alpha string |	United States place names		| Created and assigned by data curator
+
+    #1 Plastic, percentage of total landfill  |	plas1_whole	| Numerical	| Percent in decimal form	| 0.0000-1.0000	| Data from EPA report, transformed into decimal.
+
+    #2 Plastic, percentage of total landfill  |	plas2_whole |	Numerical	| Percent in decimal form	| 0.0000-1.0000	| Data from EPA report, transformed into decimal.
+
+    #3-7 Plastic, percentage of total landfill  |	pla37_whole	| Numerical	| Percent in decimal form |	0.0000-1.0000	| Data from EPA report, transformed into decimal.
+
+    Expanded polystyrene, percentage of total landfill  |	eps_whole	| Numerical	| Percent in decimal form	| 0.0000-1.0000	| Data from EPA report, transformed into decimal.
+
+    Film and shopping bags, percentage of total landfill |	film_whole	| Numerical	| Percent in decimal form |	0.0000-1.0000	| Data from EPA report, transformed into decimal.
+
+    Other plastic, percentage of total landfill	| oth_whole	| Numerical	| Percent in decimal form	| 0.0000-1.0000	| Data from EPA report, transformed into decimal.
+
+    Total platic, percentage of total landfill	|  total_whole	| Numerical	| Percent in decimal form	| 0.0000-1.0000	Data from EPA report, transformed into decimal.
+
+    #1 Plastic, percentage of all plastic |	plas1_plas  |	Numerical	| Percent in decimal form	| 0.0000-1.0000	| Data from EPA report, transformed into decimal.
+
+### SHARING & ACCESSING INFORMATION
+
+  *Open access, but beware that this was a school project so it's not perfect.
+
+### ADDITIONAL NOTES/COMMENTS
+
+This dataset was created for a Data Curation final project, so there will probably be errors.
